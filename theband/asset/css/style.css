@@ -1,0 +1,153 @@
+/* Resset CSS */
+*{
+	padding : 0 ;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* font chữ cho tất cả thẻ con của html */
+html{
+	font-family: Arial, Helvetica, sans-serif;
+}
+/*
+1 Từ ngoài vào trong
+2 Từ trên xuống dưới
+3 Từ tổng quan đến chi tiết
+
+1 Vị trí 
+2 Kích thước (Width,height)
+3 Màu sắc
+4 Kểu dáng (kiểu chữ , hình dáng ,etc..)
+*/
+
+#main{
+
+}
+
+#header{
+	/* chiều cao */
+	height: 46px;
+	/* màu nền */
+	background-color: #000;
+	/* làm nổi lên một lớp */
+	position: fixed;
+	/* dính trên trái phải */
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+#nav {
+	display: inline-block;
+}
+
+/* id và class */
+#nav , .subnav{
+	/* kiểu list */
+	list-style-type: none;
+}
+/* thẻ li cấp 1 */
+#nav > li {
+	/* tính chất khối cùng 1 dòng */
+	display: inline-block;
+
+}
+/* tất cả thẻ li */
+#nav li {
+	/* thuộc tính vị trí : */
+	position: relative;
+}
+/* thẻ li,a cấp 1 */
+#nav > li > a {
+	/* màu */
+	color: #fff;
+	/* kiểu chữ */
+	text-transform: uppercase;
+}
+
+/*  */
+#nav li a {
+	/* tc gạch chân */
+	text-decoration: none;
+	/* căn giữa chiều cao */
+	line-height: 46px;
+	/* khoảng cách từ nội dung */
+	padding: 0 24px;
+	/* tính chát hiển thị */
+	display: block;
+
+
+
+}
+/* hover vào thẻ */
+#nav > li:hover > a ,
+#nav .subnav li:hover a{
+	/* màu chữ */
+	color:#000;
+	/* màu nền */
+	background-color: #ccc;
+
+}
+
+#nav .subnav a {
+	/* màu chữ */
+	color: #000;
+	/* chiều cao của dòng */
+	line-height: 38px;
+	/* khoảng lề */
+	padding: 0 12px;
+	/* độ dài chiều ngang */
+	width: 160px;
+}
+/* khi hover vào subnav display : block */
+#nav li:hover .subnav{
+	display: inline-block;
+}
+
+
+#nav .subnav{
+	/* ẩn hiển thi */
+	display: none;
+	/* tuyệt đối căn theo toạ độ của thẻ cha */
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #fff;
+	/* đổ bóng */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+/* mũi tên xuống */
+#nav .nav-arrow-down{
+	font-size: 14px;
+}
+
+#header .search-btn{
+	/*  */
+	float: right;
+	line-height: 46px;
+	padding: 1px 23px 0 23px ;
+}
+
+#header .search-btn:hover{
+	background-color: #f44336;
+	cursor: pointer ;
+}
+
+#header .search-icon{
+	color: #fff;
+	font: 20px;
+}
+
+
+
+#slider{
+	margin-top: 46px;
+}
+
+#content{
+
+}
+
+#footer{
+
+}
